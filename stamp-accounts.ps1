@@ -1,12 +1,15 @@
-# This will stamp all accounts with the tenant.mail.onmicrosoft routing domain and the tenant.onmicrosoft.com domain as smtp aliases. If you only need one or the other
-# comment out line 8 and line 30 - 32
+# RUN FROM ON PREM EXCHANGE SHELL. 
+# This will stamp all accounts with the tenant.mail.onmicrosoft routing domain and the tenant.onmicrosoft.com domain as smtp aliases. 
+# If you only need one or the other comment out line 9 and line 33 - 35
 
 #Variables
 $Domain = "tenant.mail.onmicrosoft.com"
 
 #Comment out if not needed:
 $Domain2 = "tenant.onmicrosoft.com"
- 
+
+Import-Module ActiveDirectory
+
 #Get all users in ActiveDirectory
 $Users = Get-ADUser -Filter * -Properties ProxyAddresses
  
@@ -26,7 +29,7 @@ $Alias = "smtp:" + $User.SamAccountName + "@" + $Domain
 Set-ADUser $User -Add @{Proxyaddresses="$Alias"}
 Write-Host "Alias addded to $User.SamAccountName..." -ForegroundColor Green
 
-#Comment out if not needed:
+# Do the second stamp, comment out if not needed:
 $Alias2 = "smtp:" + $User.SamAccountName + "@" + $Domain2
 Set-ADUser $User -Add @{Proxyaddresses="$Alias2"}
 Write-Host " Second Alias addded to $User.SamAccountName..." -ForegroundColor Green
