@@ -1,0 +1,1 @@
+Add-LocalGroupMember -Group "Administrators" -Member "AzureAD\admin@deborahmillercatering.com"
