@@ -1,6 +1,6 @@
 #Variables
-$Domain = "dhcook.mail.onmicrosoft.com"
-$Domain2 = "dhcook.onmicrosoft.com"
+$Domain = "xxxxx.mail.onmicrosoft.com"
+$Domain2 = "xxxxx.onmicrosoft.com"
  
 #Get all users in ActiveDirectory
 $Users = Get-ADUser -Filter * -Properties ProxyAddresses
