@@ -11,9 +11,9 @@ New-Item -ItemType "directory" -Path "c:\exenta\barcide-fonts"
 # -> Manually download from below URLs with a web browser
 
 
-Invoke-WebRequest -Uri "http://exenta-app1.londonlux.local/LondonLuxProdWs/data/PDF.zip" -OutFile "c:\exenta\pdf.zip"
-Invoke-WebRequest -Uri "http://exenta-app1.londonlux.local/LondonLuxProdWs/data/Barcode.zip" -OutFile "c:\exenta\barcode.zip"
-Invoke-WebRequest -Uri "http://exenta-app1.londonlux.local/LondonLuxProdWs/data/LondonLuxProdLoader.zip" -OutFile "c:\exenta\exenta.zip"
+Invoke-WebRequest -Uri "http://exenta-app1.exampledomain.local/exampledomainProdWs/data/PDF.zip" -OutFile "c:\exenta\pdf.zip"
+Invoke-WebRequest -Uri "http://exenta-app1.exampledomain.local/exampledomainProdWs/data/Barcode.zip" -OutFile "c:\exenta\barcode.zip"
+Invoke-WebRequest -Uri "http://exenta-app1.exampledomain.local/exampledomainProdWs/data/exampledomainProdLoader.zip" -OutFile "c:\exenta\exenta.zip"
 
 
 # Unzips the downloaded zip files to respective folders
