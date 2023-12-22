@@ -1,0 +1,2 @@
+mdmdiagnosticstool.exe -area "DeviceEnrollment;DeviceProvisioning;Autopilot" -zip "c:\temp\MDMDiagReport.zip"
+tar -xvzf c:\temp\MDMDiagReport.zip *.csv
