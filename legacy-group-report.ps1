@@ -1,3 +1,5 @@
+# yet another group report, I don't know if I ever got this to work as intended
+
 $Result=@()
 $groups = Get-DistributionGroup -ResultSize Unlimited
 $totalmbx = $groups.Count
