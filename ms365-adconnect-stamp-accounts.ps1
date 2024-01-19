@@ -1,3 +1,7 @@
+# I ran into an issue where the email address policy was not enabled on an onprem exchange server so I ran this script to manually add the 
+# routing addresses needed for microsoft 365 hybrid environment
+
+
 #Variables
 $Domain = "xxxxx.mail.onmicrosoft.com"
 $Domain2 = "xxxxx.onmicrosoft.com"
