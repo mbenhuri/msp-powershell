@@ -1,3 +1,6 @@
+# I have no idea why this was used, it apears to convert shared mailboxes to archive names then creates a distribution list for the old emails
+# while pausing in between to let the service not throw an error
+
 $mpusers = Import-Csv C:\temp\mpusers.csv
 
 foreach ($mpuser in $mpusers){
