@@ -1,4 +1,6 @@
-﻿# Needs the following modules:
+# I don't remember the scenario for this but I had to list the phone numbers used for authentication before enabling MFA so I created this script
+ 
+# Needs the following modules:
 # Install-module Microsoft.Graph.Identity.Signins
 # Assumes a list of upns as csv with heading upn. I previously had this but can connect to azure ad and pull. 
 
